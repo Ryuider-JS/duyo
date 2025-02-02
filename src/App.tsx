@@ -1,7 +1,9 @@
+import Header from './components/header';
+
 function App() {
 	return (
-		<div className="flex h-screen w-screen flex-col justify-between bg-gray-100 text-black">
-			안녕
+		<div className="flex flex-col w-screen h-screen bg-gray-100">
+			<Header />
 		</div>
 	);
 }
