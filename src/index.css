@@ -1,8 +1,7 @@
 @font-face {
   font-family: 'Pretendard';
   src: url('/assets/PretendardVariable-CJuje-Rk.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 100 900;
 }
 
 @tailwind base;
