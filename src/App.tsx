@@ -1,4 +1,4 @@
-import FooterWrapper from './components/footer/FooterWrapper';
+import Footer from './components/footer/Footer';
 import Header from './components/Header';
 import Main from './components/main/Main';
 
@@ -7,7 +7,7 @@ function App() {
 		<div className="flex flex-col w-screen h-screen bg-gray-100">
 			<Header />
 			<Main />
-			<FooterWrapper />
+			<Footer />
 		</div>
 	);
 }
