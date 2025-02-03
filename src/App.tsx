@@ -11,7 +11,10 @@ function App() {
 		}
 	};
 	return (
-		<div className="flex flex-col w-screen h-screen bg-gray-100" onWheel={onWheelSize}>
+		<div
+			className="flex flex-col w-screen h-screen bg-gray-100 select-none"
+			onWheel={onWheelSize}
+		>
 			<Header />
 			<Main />
 			<Footer />

@@ -5,5 +5,7 @@ export interface IMainNavButton {
 
 export interface INavState {
 	focus: number;
+	double: boolean;
 	setFocus: (focus: number) => void;
+	setDouble: () => void;
 }
