@@ -19,4 +19,10 @@ html, :host {
     -webkit-tap-highlight-color: transparent;
 }
 
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
 
