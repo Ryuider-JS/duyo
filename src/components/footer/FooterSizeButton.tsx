@@ -6,7 +6,7 @@ import { useSizeStore } from '../../stores/useSizeStore';
 export default function FooterSizeButton({ role }: IFooterSizeButton) {
 	const { setSizeInc, setSizeDec } = useSizeStore();
 
-	const handleClick = () => (role ? setSizeInc() : setSizeDec());
+	const handleClick = () => (role ? setSizeInc(2) : setSizeDec(2));
 	const Icon = role ? Plus : Minus;
 
 	return (

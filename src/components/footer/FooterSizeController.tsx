@@ -4,6 +4,7 @@ import { useSizeStore } from '@/stores/useSizeStore';
 
 export default function FooterSizeController() {
 	const { size, setSize } = useSizeStore();
+
 	return (
 		<div className="flex h-full items-center gap-x-1.5">
 			<FooterSizeButton role={false} />
