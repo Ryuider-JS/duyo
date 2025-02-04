@@ -11,4 +11,5 @@ export interface IMainColSectionWrapper extends Partial<IChildren> {
 	title: string;
 	isRed?: boolean;
 	isCursor?: boolean;
+	onClickInsert?: () => void;
 }

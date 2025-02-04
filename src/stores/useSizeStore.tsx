@@ -1,4 +1,4 @@
-import { ISizeState } from '../types/size.interface';
+import { ISizeState } from '@/types/store.interface';
 import { create } from 'zustand';
 
 export const useSizeStore = create<ISizeState>((set) => ({

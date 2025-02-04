@@ -5,12 +5,14 @@ export default function MainColSectionWrapper({
 	children,
 	isRed = false,
 	isCursor = false,
+	onClickInsert,
 }: IMainColSectionWrapper) {
 	return (
 		<div
 			className={`flex flex-col items-center gap-y-1 rounded px-1.5 py-0.5 transition-all duration-100 
                   ${isRed ? 'hover:bg-red-100 active:bg-red-200' : 'hover:bg-neutral-100 active:bg-neutral-200'} 
                   ${isCursor ? 'cursor-pointer' : 'cursor-not-allowed'}`}
+			onClick={onClickInsert && onClickInsert}
 		>
 			{children || (
 				<img

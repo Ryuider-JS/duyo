@@ -1,12 +1,6 @@
-import {
-	CircleIcon,
-	FilePlus2Icon,
-	ImageIcon,
-	RectangleHorizontalIcon,
-	TextSelectIcon,
-	VideoIcon,
-} from 'lucide-react';
+import { FilePlus2Icon, ImageIcon, TextSelectIcon, VideoIcon } from 'lucide-react';
 
+import MainCanvasWrapper from './MainCanvasWrapper';
 import MainColSectionWrapper from './MainColSectionWrapper';
 import MainCommonSectionContainer from './MainCommonSectionContainer';
 import { iconLgClass } from '@/constants/style.const';
@@ -34,16 +28,7 @@ export default function MainInsertSection() {
 					</MainColSectionWrapper>
 				</div>
 			</MainCommonSectionContainer>
-			<MainCommonSectionContainer name="도형">
-				<div className="flex gap-x-0.5">
-					<MainColSectionWrapper title="사각형" isCursor={true}>
-						<RectangleHorizontalIcon className={`${iconLgClass} stroke-[1.55px]`} />
-					</MainColSectionWrapper>
-					<MainColSectionWrapper title="원" isCursor={true}>
-						<CircleIcon className={`${iconLgClass} stroke-[1.55px]`} />
-					</MainColSectionWrapper>
-				</div>
-			</MainCommonSectionContainer>
+			<MainCanvasWrapper />
 		</>
 	);
 }

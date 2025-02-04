@@ -1,4 +1,4 @@
-import { IMainNavButton } from '@/types/nav.interface';
+import { IMainNavButton } from '@/types/store.interface';
 import { useFocusStore } from '@/stores/useFocusStore';
 import { useState } from 'react';
 

@@ -1,4 +1,4 @@
-import { INavState } from '@/types/nav.interface';
+import { INavState } from '@/types/store.interface';
 import { create } from 'zustand';
 
 export const useFocusStore = create<INavState>((set) => ({
