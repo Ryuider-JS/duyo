@@ -25,4 +25,18 @@ html, :host {
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.1s ease-in-out;
+}
 
