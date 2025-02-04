@@ -10,6 +10,7 @@ export default function FooterSizeController() {
 			<FooterSizeButton role={false} />
 			<Slider
 				defaultValue={[size]}
+				min={10}
 				max={100}
 				step={0.1}
 				className="w-24"
