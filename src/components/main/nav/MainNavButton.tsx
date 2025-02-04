@@ -2,8 +2,6 @@ import { IMainNavButton } from '@/types/nav.interface';
 import { useFocusStore } from '@/stores/useFocusStore';
 import { useState } from 'react';
 
-// 이벤트 3개
-// onMouseDown / onMouseUp / ondblclick
 export default function MainNavButton({ value, idx }: IMainNavButton) {
 	const { focus, setFocus, setDouble } = useFocusStore();
 	const [isMouseDown, setIsMouseDown] = useState<boolean>(false);

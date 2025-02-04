@@ -8,7 +8,7 @@ export default function MainCommonSectionContainer({
 	return (
 		<div
 			className={`h-full flex flex-col pl-1 pr-2 gap-y-1 items-center 
-				${isBorder && 'border-r-[1px] border-neutral-300'}`}
+			${isBorder && 'border-r-[1px] border-neutral-300'}`}
 		>
 			{children}
 			<p className="text-xs font-light text-neutral-600">{name}</p>

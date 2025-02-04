@@ -3,14 +3,13 @@ import {
 	FilePlus2Icon,
 	FilesIcon,
 	LayoutPanelTopIcon,
-	Redo2Icon,
 	ScanTextIcon,
 	ScissorsIcon,
 	Trash2Icon,
-	Undo2Icon,
 } from 'lucide-react';
-import { iconLgClass, iconMdClass, iconSmClass } from '@/constants/style.const';
+import { iconLgClass, iconSmClass } from '@/constants/style.const';
 
+import MainCancelWrapper from './MainCancelWrapper';
 import MainColSectionWrapper from './MainColSectionWrapper';
 import MainCommonSectionContainer from './MainCommonSectionContainer';
 import MainRowSectionWrapper from './MainRowSectionWrapper';
@@ -18,10 +17,7 @@ import MainRowSectionWrapper from './MainRowSectionWrapper';
 export default function MainHomeSection() {
 	return (
 		<>
-			<MainCommonSectionContainer name="실행 취소">
-				<Undo2Icon className={iconMdClass} />
-				<Redo2Icon className={iconMdClass} />
-			</MainCommonSectionContainer>
+			<MainCancelWrapper />
 			<MainCommonSectionContainer name="클립보드">
 				<div className="flex gap-x-0.5">
 					<MainColSectionWrapper title="붙여넣기">
