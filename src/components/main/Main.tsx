@@ -4,8 +4,8 @@ import MainSection from './section/MainSection';
 
 export default function Main() {
 	return (
-		<div className="flex flex-col w-full h-full px-6 mt-2">
-			<div className="z-20 flex flex-col gap-y-2">
+		<div className="flex flex-col w-full h-full ">
+			<div className="flex flex-col z-[20] relative bg-gray-100 gap-y-2 px-6 pt-2">
 				<MainNav />
 				<MainSection />
 			</div>

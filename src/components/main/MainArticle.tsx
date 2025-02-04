@@ -10,13 +10,14 @@ export default function MainArticle() {
 	};
 
 	return (
-		<article className="relative flex w-screen h-full" onWheel={onWheelSize}>
+		<article
+			className="absolute top-0 left-0 z-0 flex items-center justify-center w-screen h-full"
+			onWheel={onWheelSize}
+		>
 			<div
-				className="flex items-center justify-center w-full h-full"
-				style={{ transform: `scale(${size * 0.01})` }}
-			>
-				<div className="flex w-full h-full rounded-lg border-[0.35px] border-neutral-300 bg-white shadow-xl print:rounded-none print:shadow-none"></div>
-			</div>
+				className="flex relative w-full h-full rounded-lg border-[0.35px] border-neutral-300 z-0 bg-white shadow-xl print:rounded-none print:shadow-none overflow-auto "
+				style={{ transform: `scale(${size * 0.01})`, willChange: 'transform' }}
+			></div>
 		</article>
 	);
 }
