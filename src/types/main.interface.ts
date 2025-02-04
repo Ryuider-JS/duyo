@@ -4,6 +4,7 @@ export interface IChildren {
 
 export interface IMainCommonSectionContainer extends IChildren {
 	name: string;
+	isBorder?: boolean;
 }
 
 export interface IMainColSectionWrapper extends Partial<IChildren> {
