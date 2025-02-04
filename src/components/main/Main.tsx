@@ -1,5 +1,5 @@
-import MainNav from './MainNav';
-import MainSection from './MainSection';
+import MainNav from './nav/MainNav';
+import MainSection from './section/MainSection';
 
 export default function Main() {
 	return (

@@ -13,7 +13,7 @@ export default function MainNavButton({ value, idx }: IMainNavButton) {
 			className="relative flex flex-col items-center gap-y-0.5 px-2 pt-[6px] pb-1 text-sm rounded outline-none cursor-pointer hover:bg-gray-200 text-neutral-500"
 			onClick={() => setFocus(idx)}
 			onMouseDown={() => setIsMouseDown(true)}
-			onMouseLeave={() => setIsMouseDown(false)}
+			onMouseUp={() => setIsMouseDown(false)}
 			onDoubleClick={setDouble}
 		>
 			<p className={`${idx === focus && 'font-semibold text-neutral-700'}`}>{value}</p>
