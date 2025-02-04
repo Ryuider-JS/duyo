@@ -8,4 +8,6 @@ export interface IMainCommonSectionContainer extends IChildren {
 
 export interface IMainColSectionWrapper extends Partial<IChildren> {
 	title: string;
+	isRed?: boolean;
+	isCursor?: boolean;
 }
