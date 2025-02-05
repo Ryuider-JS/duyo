@@ -5,9 +5,7 @@ export interface IMainNavButton {
 
 export interface INavState {
 	focus: number;
-	double: boolean;
 	setFocus: (focus: number) => void;
-	setDouble: () => void;
 }
 
 export interface ISizeState {
@@ -15,6 +13,8 @@ export interface ISizeState {
 	setSize: (value: number[]) => void;
 	setSizeInc: (value: 2 | 1 | 0.1) => void;
 	setSizeDec: (value: 2 | 1 | 0.1) => void;
+	setDbClickInc: () => void;
+	setDbClickDec: () => void;
 }
 
 interface Diagram {
@@ -35,4 +35,9 @@ export interface IRectangleState {
 export interface ICircleState {
 	circles: Diagram[];
 	addCircle: () => void;
+}
+
+export interface IHiddenState {
+	isHidden: boolean;
+	setIsHidden: () => void;
 }
