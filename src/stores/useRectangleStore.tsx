@@ -4,15 +4,18 @@ import { create } from 'zustand';
 export const useRectangleStore = create<IRectangleState>((set) => ({
 	rectangles: [],
 	addRectangle: () => {
-		const newRectangle = {
-			id: Date.now(),
-			x: Math.random() * window.innerWidth,
-			y: Math.random() * window.innerHeight,
-			width: Math.random() * 100 + 50,
-			height: Math.random() * 100 + 50,
-			color: `#${Math.floor(Math.random() * 16777215).toString(16)}`,
-			borderColor: `#${Math.floor(Math.random() * 16777215).toString(16)}`,
-		};
+		const width = Math.random() * 100 + 50;
+		const height = Math.random() * 100 + 50;
+		const x = Math.random() * (window.innerWidth - width);
+		const y = Math.random() * (window.innerHeight - height);
+		const color = `#${Math.floor(Math.random() * 16777215)
+			.toString(16)
+			.padStart(6, '0')}`;
+		const borderColor = `#${Math.floor(Math.random() * 16777215)
+			.toString(16)
+			.padStart(6, '0')}`;
+
+		const newRectangle = { id: Date.now(), x, y, width, height, color, borderColor };
 		set((state) => ({ rectangles: [...state.rectangles, newRectangle] }));
 	},
 }));
